@@ -30,9 +30,9 @@
 <arg name="lidar_x" value="0" />
 <arg name="lidar_y" value="0" />
 <arg name="lidar_z" value="0.1" />
-<arg name="lidar_roll" value="3.1415" />
+<arg name="lidar_roll" value="0" />
 <arg name="lidar_pitch" value="0" />
-<arg name="lidar_yaw" value="0" />
+<arg name="lidar_yaw" value="1.5708" />
 
 <param name="lidar_x" type="double" value="$(arg lidar_x)" />
 <param name="lidar_y" type="double" value="$(arg lidar_y)" />
