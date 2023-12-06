@@ -18,12 +18,9 @@ Subscriptions:
 
 ## Usage
 
-sudo chmod 777 /dev/tty*
-
-cd ~/ws_px4_utils
-
-source ./devel/setup.bash
-
-roslaunch lidar2px4 mavros_lio.launch 
+    sudo chmod 777 /dev/tty*
+    cd ~/ws_px4_utils
+    source ./devel/setup.bash
+    roslaunch lidar2px4 mavros_lio.launch 
 
 
