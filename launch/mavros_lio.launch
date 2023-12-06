@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <launch>
 
-
-
-   <node pkg="tf" type="static_transform_publisher" name="tf_camera_base"
-    args="0 0 0 -1.5708 0 0 camera_init base_link 1000"/>  
-        
 <!-- mavros -->
 <arg name="fcu_url" default="/dev/ttyUSB0:921600" />
 <arg name="gcs_url" default="" />
@@ -32,6 +27,19 @@
 
 
 <!-- mavros_bridge -->
+<arg name="lidar_x" value="0" />
+<arg name="lidar_y" value="0" />
+<arg name="lidar_z" value="0.1" />
+<arg name="lidar_roll" value="3.1415" />
+<arg name="lidar_pitch" value="0" />
+<arg name="lidar_yaw" value="0" />
+
+<param name="lidar_x" type="double" value="$(arg lidar_x)" />
+<param name="lidar_y" type="double" value="$(arg lidar_y)" />
+<param name="lidar_z" type="double" value="$(arg lidar_z)" />
+<param name="lidar_roll" type="double" value="$(arg lidar_roll)" />
+<param name="lidar_pitch" type="double" value="$(arg lidar_pitch)" />
+<param name="lidar_yaw" type="double" value="$(arg lidar_yaw)" />
 
 <node name="bridge_ros_node" pkg="lidar2px4" type="bridge_ros_node" output="screen"/>
 
