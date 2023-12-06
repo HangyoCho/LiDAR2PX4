@@ -7,9 +7,6 @@ Publications:
 Subscriptions: 
  * /Odometry [nav_msgs/Odometry]
 
-## Dependencies
-
-
 ## Installation
 
     mkdir -p ~/ws_px4_utils/src
