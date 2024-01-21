@@ -11,7 +11,7 @@ Subscriptions:
 
     mkdir -p ~/ws_px4_utils/src
     cd ~/ws_px4_utils/src
-    git clone https://github.com/HangyoCho/LiDAR2PX4.git
+    gitclone https://github.com/HangyoCho/LiDAR2PX4.git
     cd ..
     catkin build
     source devel/setup.bash
